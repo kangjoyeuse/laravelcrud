@@ -16,12 +16,9 @@ use App\Http\Controllers\pemasukanController;
 |
 */
 
-Route::get('/', function () {
-    return view('dashboard.dashboard');
-});
+Route::get('/', [dashboardController::class, 'index'])->name('home');
 
-// Default dashboard
-Route::get('dashboard', [dashboardController::class, 'index'])->name('dashboard'); 
+Route::get('/dashboard', [dashboardController::class, 'index'])->name('dashboard');
 
 // pemasukan
 Route::get('data-pemasukan', [pemasukanController::class, 'index'])->name('pemasukan.index');
