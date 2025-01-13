@@ -57,7 +57,14 @@
                         <i class="bi bi-stack"></i>
                         <span>Pemasukan</span>
                     </a>
+                </li>
 
+                <li
+                    class="sidebar-item">
+                    <a href="{{ route('pengeluaran.index') }}" class='sidebar-link'>
+                        <i class="bi bi-cash-stack"></i>
+                        <span>Pengeluaran</span>
+                    </a>
                 </li>
 
 
